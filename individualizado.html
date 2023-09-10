@@ -56,11 +56,22 @@
 
     <main role="main">
       <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col">
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe width="640" height="490" src="//www.youtube.com/embed/VGvxGfy7dNk" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="container">
+                <p>Fotos do treinamento individualizado</p>
+                <div class="row">
+                  <div class="col-sm">
+                    <img src="image6.jpg" alt="..." class="img-thumbnail">
+                  </div>
+                  <div class="col-sm">
+                    <img src="image10.jpg" alt="..." class="img-thumbnail">
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col">
@@ -75,7 +86,9 @@
                 de goleiros, defensores, meio-campistas e atacantes. Nossos treinadores trabalharão com você para identificar áreas que precisam de
                 aprimoramento e criar um plano de treinamento sob medida.
               </p>
-              <a href="contact.html" class="btn btn-primary">Solicite um orçamento</a>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Solicitar orçamento
+              </button>
             </div>
           </div>
         </div>
@@ -91,5 +104,48 @@
 
 
 </body>
-
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <!-- Cabeçalho do Modal -->
+      <div class="modal-header">
+        <h4 class="modal-title">Solicite um orçamento</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Conteúdo do Modal -->
+      <div class="modal-body">
+        <form action="#" method="post">
+          <div class="form-group justify-content-start">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="nome">Telefone:</label>
+            <input type="text" class="form-control" id="telefone" name="telefone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Serviço de interesse:</label>
+            <input type="email" class="form-control" id="serivco" name="servico" required>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Rodapé do Modal -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Enviar</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
 </html>

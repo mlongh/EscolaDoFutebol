@@ -130,3 +130,11 @@ border-style: none;
 a{
   color: rgb(240, 107, 12) ;
 }
+
+span{
+  color: rgb(240, 107, 12) ;
+}
+
+.depoimentos-titulo{
+  margin-bottom: 48px;
+}

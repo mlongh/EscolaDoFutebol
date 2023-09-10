@@ -21,7 +21,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <title>Treinamento individualizado</title>
+  <title>Treinamento em grupo</title>
 
   <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="individualizado.css" rel="stylesheet">
@@ -60,12 +60,25 @@
           <div class="row">
             <div class="col">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="640" height="490" src="//www.youtube.com/embed/utE7I33CRX0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="640" height="490" src="//www.youtube.com/embed/utE7I33CRX0" frameborder="0"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="container">
+                <p>Fotos do treinamento</p>
+                <div class="row">
+                  <div class="col-sm">
+                    <img src="image13.jpg" alt="..." class="img-thumbnail">
+                  </div>
+                  <div class="col-sm">
+                    <img src="image14.jpg" alt="..." class="img-thumbnail">
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col">
-              <h5>Trainamento em grupo</h5>
-              <p class="card-text"> Na Escola do Futebol, reconhecemos o valor do trabalho em equipe e da colaboração no esporte. Nossos
+              <h5>Treinamento em grupo</h5>
+              <p class="card-text"> Na Escola do Futebol, reconhecemos o valor do trabalho em equipe e da colaboração no
+                esporte. Nossos
                 programas de Treinamento em Grupo foram projetados para criar um ambiente de aprendizado dinâmico,
                 onde os jogadores podem aprimorar suas habilidades individuais e desenvolver uma compreensão mais
                 profunda do jogo em um contexto coletivo. Simulações de partidas são uma parte fundamental de nossos
@@ -74,7 +87,9 @@
                 recém-adquiridas com confiança. Os programas incluem táticas de
                 jogo, condicionamento físico e simulações de partidas.
               </p>
-              <a href="contact.html" class="btn btn-primary">Solicite um orçamento</a>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Solicitar orçamento
+              </button>
             </div>
           </div>
         </div>
@@ -87,8 +102,51 @@
       </div>
     </footer>
   </div>
-
-
 </body>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Cabeçalho do Modal -->
+      <div class="modal-header">
+        <h4 class="modal-title">Solicite um orçamento</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Conteúdo do Modal -->
+      <div class="modal-body">
+        <form action="#" method="post">
+          <div class="form-group justify-content-start">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="nome">Telefone:</label>
+            <input type="text" class="form-control" id="telefone" name="telefone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Serviço de interesse:</label>
+            <input type="email" class="form-control" id="serivco" name="servico" required>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+        </form>
+      </div>
+
+      <!-- Rodapé do Modal -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Enviar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 </html>
