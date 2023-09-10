@@ -28,3 +28,19 @@
   .card{
     margin-top: 28px;
   }
+
+  a{
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+    margin: 2px;
+  }
+
+  a:hover{
+    text-decoration: none;
+    border-style: none;
+    color:  rgb(240, 107, 12);
+  }
+
+  .row{
+    margin-left: 2px;
+  }
