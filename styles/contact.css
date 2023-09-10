@@ -1,0 +1,30 @@
+.main{
+    margin-top: 96px;
+}
+
+.btn {
+    background-color:  rgb(240, 107, 12);
+    border:  rgb(240, 107, 12);
+    color: aliceblue;
+  }
+  
+  .btn:hover{
+  color:  rgb(255, 196, 154);
+  border-style: none;
+  }
+
+  h2{
+    color:  rgb(240, 107, 12);
+  }
+
+  svg{
+    color:  rgb(240, 107, 12);
+  }
+
+  p{
+    font-weight: 500;
+  }
+
+  .card{
+    margin-top: 28px;
+  }
