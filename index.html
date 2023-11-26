@@ -23,7 +23,7 @@
   <title>Escola do futebol</title>
 </head>
 
-<body class="p-0 m-0">
+<body onload="listarDepoimentos()" class="p-0 m-0">
   <header>
     <nav class="navbar navbar-expand-md fixed-top  navbar-light bg-light">
       <a class="navbar-brand" href="index.html"><img src="./img/logo2.png" height="50px" width="50px"></a>
@@ -40,7 +40,7 @@
             <a class="nav-link" href="servicos.html">Serviços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#sobreNos">Sobre nós</a>
+            <a class="nav-link" href="#sobreNos">Sobre nós</a> 
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contato</a>
@@ -130,6 +130,7 @@
             treinamento bem cuidados, vestiários modernos e áreas de estar confortáveis para os jogadores e suas
             famílias. Acreditamos que um ambiente adequado é fundamental para promover o aprendizado e o crescimento
             dentro e fora do campo. Conheça nossos serviços:</p>
+            
           <a href="album.html">
             <div class="card" style="width: 18rem;">
               <ul class="list-group list-group-flush">
@@ -155,7 +156,7 @@
             deixe seus sonhos para amanhã quando você pode começar a persegui-los hoje!
 
             Junte-se à Escola do Futebol e faça parte de uma comunidade apaixonada que compartilha sua paixão pelo belo
-            jogo. O sucesso espera por você no campo!</p>
+            jogo. O sucesso espera por você no campo! Solicite um orçamento.</p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-fluid mx-auto" src="./img/image6.jpg" alt="Generic placeholder image">
@@ -244,57 +245,14 @@
           Escola do Futebol</span></h2>
         </div>
       <section id="depoimentos">
-        <div class="row d-flex justify-content-center mt-8">
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="./img/persona1.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Sofia</h2>
-            <p>"A Escola do Futebol é o lugar onde meu sonho de se tornar uma grande jogadora começou. Desde o primeiro
-              dia, fui recebida por treinadores incríveis que me ensinaram não apenas as habilidades técnicas, mas
-              também
-              o verdadeiro espírito do jogo. Estou emocionada por tudo o que aprendi aqui e estou ansiosa para ver onde
-              o
-              meu talento me levará. Obrigada, Escola do Futebol, por me dar essa oportunidade!"</p>
-
-          </div>
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="persona2.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Eduardo </h2>
-            <p> "Como um adulto que sempre amou o futebol, estava procurando um lugar para aprimorar minhas habilidades.
-              A
-              Escola do Futebol me deu a oportunidade de continuar jogando e melhorando meu jogo, mesmo depois de anos
-              sem
-              praticar. Os treinadores são experientes e as aulas são desafiadoras. É um ótimo lugar para se manter
-              ativo
-              e continuar a paixão pelo futebol."</p>
-          </div>
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="./img/persona3.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Carlos</h2>
-            <p> "Minha filha Maria tem frequentado a Escola do Futebol por dois anos, e estou impressionado com o
-              progresso que ela fez. Os treinadores são dedicados e sempre incentivam os alunos a darem o seu melhor.
-              Além
-              disso, a Escola do Futebol promove um ambiente seguro e amigável para as crianças. Estou feliz por minha
-              filha estar fazendo parte dessa comunidade incrível!"</p>
-          </div>
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="./img/image8.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>João</h2>
-            <p> "Minha jornada na Escola do Futebol tem sido incrível. Desde que entrei, há três anos, como um jovem
-              jogador promissor, tenho visto meu jogo crescer de maneiras que nunca imaginei. Os programas de
-              Treinamento
-              em Grupo me ajudaram a entender o valor do trabalho em equipe e da comunicação em campo. Aprendi a ler o
-              jogo, tomar decisões mais inteligentes e melhorar minha resistência e condicionamento físico."</p>
-          </div>
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="./img/image9.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Ana</h2>
-            <p> "Minha história na Escola do Futebol é de determinação e superação. Entrei na escola há dois anos, com o
-              sonho de jogar em níveis mais altos do futebol feminino. O treinamento individualizado que recebi aqui foi
-              fundamental para meu progresso. Os treinadores me ajudaram a aprimorar minha técnica, força e resistência,
-              adaptando cada sessão às minhas necessidades."</p>
-          </div>
+        <div class="row d-flex justify-content-center mt-8" id="depoimentos">
         </div>
       </section>
+      <div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          Deixe seu depoimento
+        </button>
+      </div>
       <hr>
       <div>
  
@@ -325,6 +283,39 @@
       </div>
     </footer>
   </main>
+  
+  <script src="app.js"></script>
 </body>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Queremos seu depoimento!</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form action="#" method="post" id="orcamento_form">
+          <div class="form-group justify-content-start">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="nome">Cidade</label>
+            <input type="text" class="form-control" id="cidade" name="cidade" required>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="salvarDepoimento()">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>

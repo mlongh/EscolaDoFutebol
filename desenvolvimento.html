@@ -59,17 +59,12 @@
           <div class="row">
             <div class="col">
               <div style="margin-bottom: 32px;">
-                <h5>Desenvolvimento juvenil</h5>
-                <p class="card-text"> A base de nossos Programas de Desenvolvimento Juvenil é nossa filosofia de que o
-                  futebol deve ser uma experiência enriquecedora e formativa para jovens jogadores. Além de desenvolver
-                  habilidades técnicas e táticas, buscamos inculcar valores como trabalho em equipe, respeito,
-                  disciplina e liderança em todos os nossos alunos. Nossos programas são projetados para crianças e
-                  adolescentes, desde os iniciantes até aqueles que já têm experiência no futebol. Independente do nível
-                  de habilidade, nossa abordagem é adaptada para atender às necessidades individuais de cada jogador.
-                  Junte-se a nós na Escola do Futebol para uma jornada emocionante de desenvolvimento e crescimento.
-                  Ao escolher a
-                  Escola do Futebol, você está investindo no futuro do futebol e capacitando a próxima geração de
-                  atletas e líderes.
+                <h5 class="display-4">Bem vindo a Escola do futebol</h5>
+                <p class="card-text"> Descubra o melhor do futebol conosco! Na nossa escola, oferecemos uma gama de serviços especializados para elevar o seu jogo. Desde Treinamento Intensivo, Aulas de Preparação Física e Nutricional até Cursos Avançados de Táticas de Jogo, estamos comprometidos em desenvolver jogadores excepcionais.
+
+                  Nossos programas são cuidadosamente elaborados por profissionais experientes e apaixonados pelo esporte. Valorizamos o crescimento individual e coletivo, garantindo que cada jogador receba a atenção e o suporte necessários para alcançar seu máximo potencial.
+                  
+                  Se você busca aprimorar suas habilidades, aumentar seu conhecimento tático ou fortalecer sua base física e mental, estamos aqui para ajudar. Entre em contato conosco para saber mais sobre nossos serviços e descubra como podemos impulsionar o seu desempenho no campo. Solicite um orçamento e junte-se a nós nessa jornada rumo à excelência no futebol
                 </p>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                   Solicitar orçamento
@@ -106,7 +101,7 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
-        <form action="#" method="post">
+        <form action="#" method="post" id="orcamento_form">
           <div class="form-group justify-content-start">
             <label for="nome">Nome</label>
             <input type="text" class="form-control" id="nome" name="nome" required>
@@ -121,19 +116,19 @@
           </div>
           <div class="form-group">
             <label for="email">Serviço de interesse</label>
-            <input type="email" class="form-control" id="serivco" name="servico" required>
+            <input type="email" class="form-control" id="servico_interesse" name="servico" required>
           </div>
           <div class="form-group">
             <label for="email">Endereço</label>
-            <input type="email" class="form-control" id="serivco" name="servico" required>
+            <input type="email" class="form-control" id="endereco" name="servico" required>
           </div>
           <div class="form-group">
             <label for="email">Data desejada para relizar o serviço</label>
-            <input type="date" class="form-control" id="serivco" name="servico" required>
+            <input type="date" class="form-control" id="data" name="servico" required>
           </div>
           <div class="form-group">
             <label for="email">Cidade e estado</label>
-            <input type="email" class="form-control" id="serivco" name="servico" required>
+            <input type="email" class="form-control" id="cidade" name="servico" required>
           </div>
           <div class="form-group">
             <label for="mensagem">Mensagem</label>
@@ -142,10 +137,12 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Enviar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="salvarOrcamento()">Enviar</button>
       </div>
     </div>
   </div>
 </div>
 
 </html>
+
+<script src="app.js"></script>

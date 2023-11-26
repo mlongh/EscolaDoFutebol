@@ -31,7 +31,7 @@
   <link href="pricing.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="listarServicos()">
   <header>
     <nav class="navbar navbar-expand-md fixed-top  navbar-light bg-light">
       <a class="navbar-brand" href="index.html"><img src="./img/logo2.png" height="50px" width="50px"></a>
@@ -64,45 +64,18 @@
         oferecemos:</p>
     </div>
 
-    <div class="container">
-      <div class="card-deck mb-3 text-center">
-        <div class="card" style="width: 18rem;">
-          <img src="./img/coach.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Treinamento Individualizado</h5>
-            <p class="card-text">Oferecemos treinamento personalizado para atender às necessidades específicas de cada
-              jogador. Isso inclui aprimoramento técnico, desenvolvimento tático e aconselhamento profissional.</p>
-            <br>
-            <div class="button-div">
-              <a href="individualizado.html" class="btn btn-primary">Saiba mais</a>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="./img/grupo.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Programas de Desenvolvimento Juvenil</h5>
-            <p class="card-text">Nossa Escola do Futebol oferece programas de desenvolvimento de jovens, onde crianças e
-              adolescentes podem aprender as habilidades fundamentais do futebol.</p>
-            <br>
-            <a href="desenvolvimento.html" class="btn btn-primary">Saiba mais</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="./img/adultos.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Treinamento em Grupo</h5>
-            <p class="card-text">Para aqueles que preferem treinar em grupo e de jogos coletivos, oferecemos sessões de
-              treinamento em equipe que enfatizam a colaboração, a comunicação e a melhoria coletiva.</p>
-            <br>
-            <br>
-            <a href="treinamentoGrupo.html" class="btn btn-primary">Saiba mais</a>
-          </div>
-        </div>
+     <div class="container" id="service-container">
+      <div class="d-flex card-deck mb-3 text-center">
       </div>
     </div>
 
   </main>
+  
 </body>
-
+<script src="app.js"></script>
+<script>
+  window.onload = function() {
+      listarServicos();
+  };
+</script>
 </html>
