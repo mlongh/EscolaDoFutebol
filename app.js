@@ -17,14 +17,16 @@ function listarServicos(){
       let servico = res[i]; 
   
       serviceContainer.innerHTML += `
-        <div class="card" style="width: 18rem;">
+        <div class="card col-md-3" style="margin:3px !important; height:650px; position: relative;">
           <img src="${servico.img_src}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${servico.description}</h5>
             <p class="card-text">${servico.service_description}</p>
             <br>
+            <div style="position: absolute; bottom: 0px; margin-bottom: 12px; !important">
             <a href="desenvolvimento.html" class="btn btn-primary">Saiba mais</a>
-          </div>
+            </div>
+            </div>
         </div>
       `;
     }
@@ -49,7 +51,7 @@ function listarServicos(){
       let depoimento = res[i]; 
       if (depoimento.img === '' || depoimento.img === null){
         depoimentoContainer.innerHTML += `
-        <div class="col-lg-4">
+        <div class="col-md-8">
         <h2>${depoimento.Nome}</h2>
         <p>"${depoimento.Mensagem}"</p>
       </div>
@@ -77,8 +79,6 @@ function listarServicos(){
     let data = document.getElementById('data').value;   
     let cidade = document.getElementById('cidade').value;
     let mensagem = document.getElementById('mensagem').value;   
-
-
 
     let url;
     
