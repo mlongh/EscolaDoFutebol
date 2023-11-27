@@ -89,10 +89,10 @@ function listarServicos(){
     req.open('POST', url, false);
     req.send();
     if (req.status === 200) {
-      alert('Orcamento salvo com sucesso!');
+      alert('Enviado com sucesso!');
 
   } else {
-      alert('Erro ao salvar o orçamento. Por favor, tente novamente.');
+      alert('Erro ao salvar. Por favor, tente novamente.');
   }
 }
 
