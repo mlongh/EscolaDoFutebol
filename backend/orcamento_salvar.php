@@ -1,12 +1,12 @@
 <?php
-    $nome = $_GET['name'];
-    $telefone = $_GET['phone'];
+    $nome = $_GET['nome'];
+    $telefone = $_GET['telefone'];
     $email = $_GET['email'];
-    $servico_interesse = $_GET['service'];
-    $endereco = $_GET['adress'];
-    $data = $_GET['date'];
-    $cidade = $_GET['city'];
-    $mensagem = $_GET['message'];
+    $servico_interesse = $_GET['servico_interesse'];
+    $endereco = $_GET['endereco'];
+    $data = $_GET['data'];
+    $cidade = $_GET['cidade'];
+    $mensagem = $_GET['mensagem'];
 
     require 'banco.php';
 
