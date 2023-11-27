@@ -86,7 +86,7 @@ function listarServicos(){
         nome=${nome}&telefone=${telefone}&email=${email}&servico_interesse=${servico_interesse}&endereco=${endereco}&data=${data}&cidade=${cidade}&mensagem=${mensagem}`;     
       
     let req = new XMLHttpRequest();
-    req.open('GET', url, false);
+    req.open('POST', url, false);
     req.send();
     if (req.status === 200) {
       alert('Orcamento salvo com sucesso!');
@@ -106,12 +106,12 @@ function salvarDepoimento(){
       nome=${nome}&cidade=${cidade}&mensagem=${mensagem}`;     
     
   let req = new XMLHttpRequest();
-  req.open('GET', url, false);
+  req.open('POST', url, false);
   req.send();
   if (req.status === 200) {
-    alert('Orcamento salvo com sucesso!');
+    alert('Depoimento enviado com sucesso!');
 
 } else {
-    alert('Erro ao salvar o orçamento. Por favor, tente novamente.');
+    alert('Erro ao salvar o depoimento. Por favor, tente novamente.');
 }
 }
