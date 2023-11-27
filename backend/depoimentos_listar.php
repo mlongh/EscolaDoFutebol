@@ -1,5 +1,4 @@
 <?php
-    //Conectar com o banco de dados
     require 'banco.php';
 
     $sql = "select * from t_depoimentos order by id";    
@@ -7,9 +6,6 @@
     
     $consulta->execute();
 
-    //$linhas = $consulta->rowCount();
-
-    //echo $linhas;
     $dados = $consulta->fetchAll(PDO::FETCH_OBJ);
 
     echo json_encode($dados);
